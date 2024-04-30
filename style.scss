@@ -1,0 +1,160 @@
+#Main{
+    // border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    #frame{
+        border: 1px solid black;
+        padding: 10px;
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        max-width: fit-content;
+        min-width: fit-content;
+        border-radius: 20px;
+        box-shadow: 5px 10px 50px;
+        
+
+        #Screens{
+            // border: 1px solid black;
+            padding: 10px;
+            width: 90%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column; 
+
+        #screen{
+            border: 1px solid black;
+            padding: 10px;
+            width: 90%;
+            height: 20px;
+            margin: 5px;
+            border-radius: 10px;
+            text-align: end;
+            max-width: 215px;
+            overflow-x: scroll;
+     
+            ::after{
+                content: "<<";
+            }
+        }
+
+        #Resultscreen{
+            border: 1px solid black;
+            padding: 10px;
+            width: 90%;
+            height: 20px;
+            border-radius: 10px;
+            text-align: end;
+            max-width: 215px;
+            overflow-x: scroll;
+        }
+    }
+
+    #commands{
+        border: 1px solid black;
+        width: 90%;
+        height: 10px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: row;
+        background-color: rgba(0, 0, 0, 0.701);
+
+        button{
+            width: fit-content;
+            height: fit-content;
+            margin: 5px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            &:hover {
+                background-color: gray; 
+            }
+        }
+    }
+
+
+    #buttons{
+        // border: 1px solid black;
+        padding: 8px;
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        min-width: 250px;
+
+        #numbers{
+            border: 1px solid black;
+            padding: 10px;
+            width: fit-content;
+            height: fit-content;
+            border-radius: 10px;
+            margin: 5px;
+            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+
+            button{
+                height: 40px;
+                width: 40px;
+                margin: 5px;
+                background-color: white;
+                border: 1px solid black;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                &:hover {
+                    background-color: gray; 
+                }
+                // font-size: medium;           
+                &:last-child{
+                    grid-column: 2/3;
+                    grid-row: 4/4;
+                }
+            }
+        }
+
+        #operators{
+            border: 1px solid black;
+            padding: 10px;
+            width: fit-content;
+            height: fit-content;
+            margin: 5px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+
+            button{
+                height: 30px;
+                width: 30px;
+                font-size: medium;  
+                margin: 5px;
+                background-color: white;
+                border: 1px solid black;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                &:hover {
+                    background-color: gray; 
+                }
+            }
+        }
+    }
+
+    }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
